@@ -45,7 +45,8 @@ if(!empty($_POST['age'])){
       echo $age;
       print " секунд, ";
     $age_year = intdiv($age,31536000);
-    $age_grover = Modulo($age_year);
+    $age_groove = $age/31536000;
+    $age_grover = Modulo($age_groove);
     $mounth = $age_grover*12;
     $week = Modulo($mounth)*4;
     $day = Modulo($week)*7;
