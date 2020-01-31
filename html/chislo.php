@@ -18,14 +18,15 @@
   </nav>
   <main>
     <!-- Основное тело -->
-<?php if(!empty($_POST['firstName'])){
-$firstName = $_POST['firstName'];
-$secondName = $_POST['secondName'];
-$middleName = $_POST['middleName'];
-echo "Здравствуйте, ";
-echo join(' ', array( $firstName, $secondName, $middleName ) );
-echo " !";
-}
+<?php
+if(!empty($_POST['firstName'])){
+      $firstName = $_POST['firstName'];
+      $secondName = $_POST['secondName'];
+      $middleName = $_POST['middleName'];
+        echo "Здравствуйте, ";
+        echo join(' ', array( $firstName, $secondName, $middleName ) );
+        echo " !";
+    }
 ?>
 
 <form name="test" method="post" action="age.php">
